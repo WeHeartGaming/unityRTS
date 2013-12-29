@@ -5,7 +5,7 @@ public class Airship : MonoBehaviour {
 	private float health = 0;
 	// Use this for initialization
 	void Start () {
-		health = 100;
+		health = 1000;
 	}
 
 	public float Health {

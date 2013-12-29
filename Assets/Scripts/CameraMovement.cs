@@ -85,7 +85,7 @@ public class CameraMovement : MonoBehaviour {
 			}
 		}
 		if (Input.GetAxis ("MouseScrollWheel") != 0) {
-			cameraHeight += Input.GetAxis ("MouseScrollWheel") * 4;
+			cameraHeight -= Input.GetAxis ("MouseScrollWheel") * 4;
 			if (cameraHeight <= 10) {
 				cameraHeight = 10;
 			}

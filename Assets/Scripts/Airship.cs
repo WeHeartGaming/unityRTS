@@ -21,7 +21,6 @@ public class Airship : MonoBehaviour {
 		float dmg = collision.gameObject.GetComponent<Rocket>().Damage;
 		Health -= dmg;
 
-		Debug.Log (Health);
 		if (Health < 1) {
 			Destroy(gameObject, 0);
 		}

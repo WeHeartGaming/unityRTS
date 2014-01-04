@@ -17,10 +17,19 @@ public class TurretAim : MonoBehaviour {
 			Vector3 enemyPos = obj.transform.position;
 			Vector3 turretPos = gameObject.transform.position;
 
-			if (Vector3.Distance (enemyPos, turretPos) < 10) {
+			float dist = Vector3.Distance (enemyPos, turretPos);
+
+			if (dist < 40) {
 				gameObject.transform.LookAt(enemyPos);
+				Quaternion rot = gameObject.transform.rotation;
+				float deg = Mathf.Asin((9.81f * dist) / (50*50));
+				deg = deg * Mathf.Rad2Deg;
+				deg = deg / 2;
+				//Debug.Log(deg);
+				gameObject.transform.Rotate(-deg, 0, 0);
 				if (lastShot < (Time.realtimeSinceStartup - timer)) {
-					gameObject.GetComponentInChildren<TurretMuzzle> ().Fire ();
+					float vel = 50;
+					gameObject.GetComponentInChildren<TurretMuzzle> ().Fire (vel);
 					lastShot = Time.realtimeSinceStartup;
 				}
 			}

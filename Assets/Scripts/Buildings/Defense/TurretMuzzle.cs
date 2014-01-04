@@ -11,9 +11,9 @@ public class TurretMuzzle : MonoBehaviour {
 	void Update () {
 	}
 
-	public void Fire () {
+	public void Fire (float vel) {
 		Rigidbody clone;
 		clone = Instantiate (rocket, transform.position, transform.rotation) as Rigidbody;
-		clone.velocity = transform.TransformDirection(Vector3.forward * 20);
+		clone.velocity = transform.TransformDirection(Vector3.forward * vel);
 	}
 }

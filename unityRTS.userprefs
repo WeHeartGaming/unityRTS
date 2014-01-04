@@ -1,10 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\InGameGUI.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Buildings\Defense\TurretAim.cs">
     <Files>
+      <File FileName="Assets\Scripts\Props\Weapons\Rocket.cs" Line="25" Column="49" />
       <File FileName="Assets\Scripts\User.cs" Line="21" Column="10" />
-      <File FileName="Assets\Scripts\Airship.cs" Line="8" Column="15" />
-      <File FileName="Assets\Scripts\InGameGUI.cs" Line="16" Column="35" />
+      <File FileName="Assets\Scripts\Airship.cs" Line="23" Column="1" />
+      <File FileName="Assets\Scripts\InGameGUI.cs" Line="17" Column="68" />
+      <File FileName="Assets\Scripts\Buildings\Defense\TurretAim.cs" Line="28" Column="5" />
+      <File FileName="Assets\Scripts\Buildings\Defense\TurretMuzzle.cs" Line="4" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

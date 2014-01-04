@@ -20,8 +20,10 @@ public class Rocket : MonoBehaviour {
 	}
 	void OnCollisionEnter(Collision collision) {
 		//Debug.Log (collision.gameObject.GetComponent());
-		if (collision.gameObject.GetComponent<Airship>()) {
-				Destroy (gameObject, 0);
+		if (collision.gameObject.GetComponent<Airship> ()) {
+			Destroy (gameObject, 0);
+		} else if (collision.gameObject.name == "Plane") {
+			// Debug.Log("Distance" + gameObject.transform.position);
 		}
 	}
 }
